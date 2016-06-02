@@ -1,0 +1,153 @@
+*{margin:0;padding:0;}
+body {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333;
+	background-color: #1D9D74;
+	background-image: url("http://tinhoc24h.net/wp-content/themes/tinhoc24h/images/background.png");
+}
+.clear{clear:both;}
+a,a:visited,a:link{
+	text-decoration:none;
+	outline:none;
+}
+h1,h2{
+	font-size:18px;
+	font-weight:bold;
+}
+			.b {
+				display: inline-block;
+				
+				width: 40px;
+				text-align: center;
+				margin-right: 10px;
+				border: 1px solid rgb(215, 215, 215);
+				margin-top:10px;
+				line-height: normal;
+			}
+			.i {
+				padding: 5px;
+				height:16px;
+				width:16px;
+			}
+			.c{
+				height: 20px;
+				border: medium none;
+				background: rgb(236, 236, 236) none repeat scroll 0% 0%;
+				width: 38px;
+				overflow: hidden;
+				resize: none;
+				outline: medium none;
+				font-weight: bold;
+				text-align: center;
+				font-size: 1.1em;
+				clear: both;
+				padding-top: 3px;
+				margin: 0;
+				transition: all .4s ease;
+                -ms-transition: all .4s ease;
+                -webkit-transition: all .4s ease;
+                -moz-transition: all .4s ease;
+			}
+			textarea:focus{
+				background:#E1E7F2;
+			}
+			
+			#wrap{
+				padding-bottom:20px;
+			}
+			.container{
+				max-width: 1200px;
+				padding: 0px 35px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top:20px;
+			}
+			.navbar{
+				display:block;
+				height:45px;
+				border-bottom:1px solid #1B926C;
+				margin-top:20px;
+			}
+			.logo{
+				width:150px;
+				float: left;
+			}
+			#nav{
+				float:left;
+				
+			}
+			#nav li{
+				list-style:none;
+				display:inline-block;
+				padding: 7px 10px;
+			}
+			#nav li a:hover{
+				color:red;
+			}
+			#nav li a,#nav li a:visited{
+				color:#fff;
+				padding: 7px 10px;
+				font-size:18px;
+				font-weight:bold;
+			}
+			.white-box{
+				background:#fff;
+				padding:20px;
+				text-align:center;
+			}
+			.content{
+				
+			}
+			.paragraph{
+				text-align: justify;
+				line-height: 1.75em;
+			}
+			.copyright{
+				text-align: center;
+				padding: 10px;
+				line-height: 20px;
+				color: #fff;
+			}
+			
+			
+			#backtotop {
+    z-index: 9999;
+    width: 48px;
+    height: 48px;
+    background: transparent url("http://tinhoc24h.net/wp-content/themes/tinhoc24h/images/top.png") no-repeat scroll 0% 0%;
+    right: 10px;
+    bottom: 10px;
+	position:fixed;
+	text-indent: -9999px;
+	outline:none;
+}
+.fixed_social {
+    position: fixed;
+    top: 200px;
+    left: 5px;
+    text-align: center;
+    background-color: #FFF;
+
+    padding: 8px 4px;
+    z-index: 999;
+}
+.fixed_social ul {
+    margin: 0px;
+    padding: 0px;
+}
+.fixed_social li {
+    display: block;
+    margin: 5px 0px;
+}
+@media screen and (max-width:768px){
+	#wrap,.white-box,.container{max-width:100%;}
+	.container{padding:0}
+	.navbar{height:auto;}
+}
+@media screen and (max-width:480px){
+	.img-responsive{
+		max-width:100%;
+	}
+}
