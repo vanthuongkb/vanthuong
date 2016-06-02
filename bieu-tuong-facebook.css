@@ -1,7 +1,6 @@
 			.b {
 				display: inline-block;
-				
-				width: 40px;
+				width: 52px;
 				text-align: center;
 				margin-right: 10px;
 				border: 1px solid rgb(215, 215, 215);
@@ -9,19 +8,19 @@
 				line-height: normal;
 			}
 			.i {
-				padding: 5px;
+				padding: 7px;
 			}
 			.c{
-				height: 20px;
+				height: 32px;
 				border: medium none;
 				background: rgb(236, 236, 236) none repeat scroll 0% 0%;
-				width: 38px;
+				width: 50px;
 				overflow: hidden;
 				resize: none;
 				outline: medium none;
 				font-weight: bold;
 				text-align: center;
-				font-size: 1.1em;
+				font-size: 1em;
 				clear: both;
 				padding-top: 3px;
 				margin: 0;
@@ -32,10 +31,6 @@
 			}
 			textarea:focus{
 				background:#E1E7F2;
-			}
-			
-			#wrap{
-				padding-bottom:20px;
 			}
 
 			.white-box{
