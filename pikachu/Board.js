@@ -25,7 +25,7 @@ function newBoard() {
 	div.style.height = BoardHeight + "px";
 	
 	div.setRandomBgr = function() {
-		this.style.backgroundImage = "url("+ imageFolder +"'bgr" + getRandom(4) + ".jpg')";
+		this.style.backgroundImage = "url('"+ imageFolder +"bgr" + getRandom(4) + ".jpg')";
 	}
 	
 	div.setNewLevel = function(level) {
