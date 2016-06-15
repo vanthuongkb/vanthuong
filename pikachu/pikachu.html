@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>GAME PIKACHU VANTHUONG.INFO</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="EXPIRES" content="0">
+<meta name="RESOURCE-TYPE" content="DOCUMENT">
+<meta name="DISTRIBUTION" content="GLOBAL">
+<meta name="language" content="Vietnamese, English">
+<meta content="game pikachu online, tai game pikachu, choi game pikachu, kawai 2012." name="KEYWORDS">
+<meta name="DESCRIPTION" content="game pikachu online, tai game pikachu, choi game pikachu, kawai 2012.">
+<meta name='generator' content='VanThuong.Info' /> 
+<meta name="rating" content="All" />
+<meta name='robots' content='noindex,nofollow' /> 
+<style type="text/css">
+<!--
+body {
+	background-color: #fff;
+}
+  #maintable {
+    border:1px solid #ddd;
+  }
+  #board-info {
+    text-transform:uppercase;
+    color:#333;
+    font-size:14px;
+    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+    outline: none;
+    line-height:1.75em;
+    font-weight: 600;
+    text-align: left;
+  }
+  #board-info .bullet {
+    
+  }
+  #board-info td:nth-child(even) {
+    color:red;
+  }
+  #board-info td:nth-child(odd) {
+    color:#136AA5;
+  }
+  .game-action input[type=button] {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  
+  .game-action input[type=button]:hover {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+  }
+    .text-center {
+      text-align:center;
+    }
+  #statistic {
+    margin-top:10px;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+  }
+-->
+</style></head>
+
+<body>
+<div id="pikachu-game" oncontextmenu="return false">
+<script type="text/javascript">
+  var imageFolder = "";
+</script>
+  <div id="loading" class="style11" align="center">Game đang được tải về vui lòng đợi chút...</div>
+<table id="maintable" align="center">
+  <tr>
+    <td>
+      <table id="board-info">
+      <tbody>
+        <tr>
+        <td colspan="2" class="text-center">
+            <strong>Pikachu online</strong>
+        </td>
+        </tr> 
+        <tr>
+          <td>Độ khó:</td>
+          <td><span id="level">1</span></td>
+        </tr>
+        <tr>
+          <td>Lượt chơi:</td>
+          <td><span id="blood"></span></td>
+        </tr>
+        <tr>
+          <td>Điểm:</td>
+          <td><span id="score"></span></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="text-center game-action"><input type="button" name="Button" value="Chơi lại" onclick="el.createBigGame()" /></td>
+        </tr>
+      </tbody>
+      </table>
+      </td>
+    <td valign="bottom"><div id="timebar" style="width:20px;background-color:#136AA5"></div></td>
+    <td id="board"></td>
+  </tr>
+</table>
+<script language="JavaScript" type="text/javascript" src="ImagePreloader.js" ></script>
+<script language="JavaScript" type="text/javascript" src="Metalwolf.js" ></script>
+<script language="JavaScript" type="text/javascript" src="Piece.js"></script>
+<script language="JavaScript" type="text/javascript" src="Board.js" ></script>
+<script language="JavaScript" type="text/javascript" src="Algorithms.js"></script>
+<script language="JavaScript" type="text/javascript">
+var el;
+function loadedAll() {
+	document.getElementById("pikachu-game").removeChild(document.getElementById("loading"));
+	el = newBoard();
+	el.createBigGame();
+	document.getElementById("board").appendChild(el);
+	document.getElementById("maintable").style.visibility = "visible";
+}
+
+function loadImage() {
+	var list = new Array;
+	list.push("avatar.jpg");
+	var i;
+	for (i = 0; i <= 4; i++) list.push("bgr" + i + ".jpg");
+	for (i = 1; i <= 36; i++) list.push("pieces" + i + ".png");
+	
+	var t = new ImagePreloader(list, loadedAll);
+}
+loadImage();
+</script>
+  <div id="statistic">Số người đang chơi<br/><img src='http://whos.amung.us/swidget/vanthuongit.png'/></div>
+  </div>
+</body>
+
+</html>
