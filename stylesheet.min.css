@@ -217,7 +217,7 @@ background: url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab36
 }
 
 #search-box #searchText {
-  width:100%
+  width:100%;
   margin-top: 5px;
   margin-right: 5px;
   height: 25px;
@@ -628,18 +628,16 @@ ul.toc {
 	
     #main-menu {display:none;}
     #menu .toggle-nav{display:block;}
-    #menu li.trigger {
-      background:none;
-    }
     #menu li.trigger:hover {
-      background-color:rgb(38,139,200);
-      background-image: none;
+      background-color:rgb(38,139,200) url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab360fd6bc2765c8e6787df16/assets/images/bullet-white.png) left center no-repeat;
     }
   
     #menu .icon-home {display:none;}
   
     #menu > ul > li {
       display:block;
+      background: url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab360fd6bc2765c8e6787df16/assets/images/bullet-white.png) left center no-repeat;
+      padding-left: 20px;
     }
   
     #menu > ul > li:hover .sub-menu {
