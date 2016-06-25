@@ -190,7 +190,7 @@ background: url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab36
 }
 
 .icon-home {
-  padding: 10px 0px;
+  padding: 10px!important;
 }
 
 .icon-home a{
@@ -207,7 +207,8 @@ background: url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab36
     border: none;
     color: #fff;
     cursor: pointer;
-    margin-top: 4px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   outline:none;
   display:none;
   font-weight: 600;
@@ -631,7 +632,8 @@ ul.toc {
       background:none;
     }
     #menu li.trigger:hover {
-      background:rgb(38,139,200);
+      background-color:rgb(38,139,200);
+      background-image: none;
     }
   
     #menu .icon-home {display:none;}
@@ -646,21 +648,21 @@ ul.toc {
   
 	#menu-left, #search-box {
       width:100%;
-      background:#fff;
     }
 
 	#search-box {
 		padding: 5px 10px;
     	text-align: center;
+      background:#fff;
     }
   
     #navigation {
       border-bottom:none;
     }
 
-  #menu-left {
-    border-bottom: 1px solid rgb(27,148,241);
-  }
+    #menu-left {
+      border-bottom: 1px solid rgb(27,148,241);
+    }
 	#search-box #searchText {
 		float:none;
 		width:100%;
