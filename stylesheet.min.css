@@ -140,8 +140,10 @@ body {
 }
 
 #menu .icon-home:hover a {
-background:rgb(38,139,200) url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab360fd6bc2765c8e6787df16/assets/images/icon-home.png) center no-repeat;
+background: url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab360fd6bc2765c8e6787df16/assets/images/icon-home.png) center no-repeat;
 }
+
+
  #menu > ul > li:hover {
   background:rgb(38,139,200);
    -webkit-transition: all .5s ease-in-out;
@@ -157,7 +159,7 @@ background:rgb(38,139,200) url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5
   position: relative;
 }
 
-#menu a.trigger {
+#menu li.trigger {
   background: url("https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab360fd6bc2765c8e6787df16/assets/images/arrow-down.png") right center no-repeat;
 }
 
@@ -182,11 +184,29 @@ background:rgb(38,139,200) url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5
   line-height: 1.75em;
 }
 
-.icon-home a {
+.icon-home {
+  padding: 10px 0px;
+}
+
+.icon-home a{
   text-indent: -9999px;
   background: url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab360fd6bc2765c8e6787df16/assets/images/icon-home.png) center  no-repeat;
   display: inline-block;
-  min-width:40px;
+  min-width:20px;
+  height:11px;
+}
+
+#menu .toggle-nav {
+    padding: 5px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 4px;
+  outline:none;
+  display:none;
+  font-weight: 600;
+    text-transform: uppercase;
 }
 
 #search-box #searchText {
@@ -582,18 +602,6 @@ ul.toc {
     padding-left: 3px!important;
     line-height: 1.0em!important;
 }
-
-#menu .toggle-nav {
-    padding: 5px;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 4px;
-  outline:none;
-  display:none;
-}
-
 
 /** Responsive **/
 @media screen and (max-width : 1024px) {
