@@ -117,7 +117,7 @@ body {
   border-bottom: 1px solid rgb(27,148,241);
   border-top: 1px solid rgb(14,114,182);
   width:100%;
-  height:36px;
+  float:left;
 }
 
 #menu-left {
@@ -130,33 +130,35 @@ body {
   width: 20%;
 }
 
+#main-menu {
+  display:block;
+}
 #menu > ul > li {
   display: inline-block;
-  padding: 0px 5px 4px 0px;
   line-height: normal;
+  padding: 10px 20px 10px 9px;
 }
 
 #menu .icon-home:hover a {
 background:rgb(38,139,200) url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab360fd6bc2765c8e6787df16/assets/images/icon-home.png) center no-repeat;
 }
- #menu > ul > li:hover a.trigger {
-  background:rgb(38,139,200) url("https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab360fd6bc2765c8e6787df16/assets/images/arrow-down.png") right center no-repeat;
+ #menu > ul > li:hover {
+  background:rgb(38,139,200);
+   -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 
 #menu a {
   text-shadow: 1px 1px #555;
-  padding: 10px 18px 9px 9px;
   position: relative;
 }
 
 #menu a.trigger {
   background: url("https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab360fd6bc2765c8e6787df16/assets/images/arrow-down.png") right center no-repeat;
-      -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
 }
 
 #menu .sub-menu {
@@ -164,7 +166,7 @@ background:rgb(38,139,200) url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5
   position:absolute;
   width:180px;
   background:rgb(38,139,200) ;
-  margin-top: 9px;
+  margin-top: 10px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   list-style: none;
@@ -180,9 +182,8 @@ background:rgb(38,139,200) url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5
   line-height: 1.75em;
 }
 
-.icon-home a{
+.icon-home a {
   text-indent: -9999px;
-  padding: 9px 5px!important;
   background: url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab360fd6bc2765c8e6787df16/assets/images/icon-home.png) center  no-repeat;
   display: inline-block;
   min-width:40px;
@@ -212,6 +213,7 @@ background:rgb(38,139,200) url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5
   display:block;
   margin-top:10px;
   padding:10px;
+  float:left;
 }
 
 #articles {
