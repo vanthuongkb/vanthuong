@@ -588,6 +588,8 @@ ul.toc {
     color: #fff;
     cursor: pointer;
     margin-top: 4px;
+  outline:none;
+  display:none;
 }
 
 
@@ -612,6 +614,7 @@ ul.toc {
     }
 	
     #main-menu {display:none;}
+    #menu .toggle-nav{display:block;}
 	#menu-left, #search-box {
 		width:100%;
     }
