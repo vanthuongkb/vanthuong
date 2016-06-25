@@ -153,14 +153,18 @@ background: url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab36
     transition: all .5s ease-in-out;
 }
 
+#menu > ul > li.trigger:hover {
+  background: rgb(38,139,200) url("https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab360fd6bc2765c8e6787df16/assets/images/arrow-down.png") right center no-repeat;
+}
+
 
 #menu a {
   text-shadow: 1px 1px #555;
-  position: relative;
 }
 
 #menu li.trigger {
   background: url("https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab360fd6bc2765c8e6787df16/assets/images/arrow-down.png") right center no-repeat;
+  position: relative;
 }
 
 #menu .sub-menu {
@@ -168,7 +172,8 @@ background: url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab36
   position:absolute;
   width:180px;
   background:rgb(38,139,200) ;
-  margin-top: 10px;
+  top: 37px;
+  left:0px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   list-style: none;
@@ -179,7 +184,7 @@ background: url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab36
 }
 
 #menu .sub-menu > li {
-  padding: 7px 5px 4px 9px;
+  padding: 7px 5px 4px 20px;
   background: url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab360fd6bc2765c8e6787df16/assets/images/bullet-white.png) left center no-repeat;
   line-height: 1.75em;
 }
@@ -447,10 +452,6 @@ margin-left: 5px;
 	overflow: hidden;
 }
 
-.tinynav {
-display:none;
-}
-
 #backtotop,#backtotop:hover{background:url(http://1.bp.blogspot.com/-vYhYcH_GjdM/UyXqnTlSjvI/AAAAAAAABWI/D3eKa1m-pMM/s1600/toTop.png)}
 #backtotop{position:fixed;z-index:9999;width:50px;height:50px;right:20px;bottom:20px;text-indent:-9999px;opacity:0;transition:.5s;-moz-transition:.5s;-webkit-transition:.5s}#backtotop.hidden{bottom:-50px;opacity:0}
 #backtotop.display{bottom:20px;opacity:1}
@@ -625,6 +626,23 @@ ul.toc {
 	
     #main-menu {display:none;}
     #menu .toggle-nav{display:block;}
+    #menu li.trigger {
+      background:none;
+    }
+    #menu li.trigger:hover {
+      background:rgb(38,139,200);
+    }
+  
+    #menu .icon-home {display:none;}
+  
+    #menu > ul > li {
+      display:block;
+    }
+  
+    #menu > ul > li:hover .sub-menu {
+      display:none;
+    }
+  
 	#menu-left, #search-box {
 		width:100%;
     }
