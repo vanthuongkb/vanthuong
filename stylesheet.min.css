@@ -212,6 +212,7 @@ background: url(https://cdn.rawgit.com/vanthuongkb/vanthuong/52c5abf169bf07bab36
   display:none;
   font-weight: 600;
     text-transform: uppercase;
+  width:100%;
 }
 
 #search-box #searchText {
@@ -644,14 +645,22 @@ ul.toc {
     }
   
 	#menu-left, #search-box {
-		width:100%;
+      width:100%;
+      background:#fff;
     }
 
 	#search-box {
 		padding: 5px 10px;
     	text-align: center;
     }
+  
+    #navigation {
+      border-bottom:none;
+    }
 
+  #menu-left {
+    border-bottom: 1px solid rgb(27,148,241);
+  }
 	#search-box #searchText {
 		float:none;
 		width:100%;
